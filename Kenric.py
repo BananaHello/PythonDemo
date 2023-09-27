@@ -4,7 +4,7 @@ import random
 
 
 # Seed for reproducibility
-np.random.seed(0)
+#np.random.seed(0)
 
 # Generate random coefficients a, b, and c for the parabola y = ax^2 + bx + c
 a = np.random.rand() * 10 - 5  # Random value between -5 and 5
