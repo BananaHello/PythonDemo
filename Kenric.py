@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import random
 
 
 # Seed for reproducibility
@@ -14,8 +15,11 @@ c = np.random.rand() * 10 - 5  # Random value between -5 and 5
 def parabola(x, a, b, c):
     return a * x ** 2 + b * x + c
 
+#establish random x values
+lst = [-9, -8, -7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, 9,]
+
 # Choose three different x values
-x_values = np.array([-2, 0, 2])
+x_values = np.array(random.sample(lst, 3))
 
 # Calculate the corresponding y values
 y_values = parabola(x_values, a, b, c)
